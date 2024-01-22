@@ -10,7 +10,10 @@
     --t_color: #2e3233 ;
 }
 .tq-hide{
-    display: none;
+    display: none!important;
+}
+.tq-show{
+    display: block!important;
 }
 
 /* Toggle Question starts here */
@@ -44,6 +47,9 @@
     justify-content: space-between;
     padding: 0.5rem 0;
 }
+.tq-question-btn{
+    cursor: pointer;
+}
 .tq-question-title h3{
     color: var(--t_color) ;
     text-transform: capitalize;
@@ -53,6 +59,7 @@
 .tq-question-body{
     padding: 1rem 0;
     border-top: 1px solid var(--t_color);
+    display: none;
 }
 .tq-question-body p{
     color: var(--t_color);
